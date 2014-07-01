@@ -18,7 +18,7 @@ var log = bunyan.createLogger({
 		type: 'raw',
 		stream: bsyslog.createBunyanStream({
 			type: 'sys',
-			facility: bsyslog.local0,
+			facility: bsyslog.facility.local0,
 			host: '192.168.0.1',
 			port: 514
 		})
